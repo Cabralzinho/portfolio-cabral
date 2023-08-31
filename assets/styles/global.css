@@ -46,6 +46,19 @@ html {
     animation: float 10s infinite linear;
 }
 
+.animation-navbar {
+    animation: navbar-entry 1s forwards;
+}
+
+@keyframes navbar-entry {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
 @keyframes appear {
     from {
         opacity: 0;

@@ -750,12 +750,12 @@ video {
   border-radius: 0.25rem;
 }
 
-.rounded-lg{
-  border-radius: 0.5rem;
+.rounded-2xl{
+  border-radius: 1rem;
 }
 
-.rounded-sm{
-  border-radius: 0.125rem;
+.rounded-lg{
+  border-radius: 0.5rem;
 }
 
 .rounded-xl{
@@ -833,6 +833,11 @@ video {
 
 .p-6{
   padding: 1.5rem;
+}
+
+.px-5{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .py-10{
@@ -1032,6 +1037,20 @@ html {
   animation: float 10s infinite linear;
 }
 
+.animation-navbar {
+  animation: navbar-entry 1s forwards;
+}
+
+@keyframes navbar-entry {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0px);
+  }
+}
+
 @keyframes appear {
   from {
     opacity: 0;
@@ -1127,11 +1146,6 @@ html {
 }
 
 @media (max-width: 850px){
-  .tablet\:mx-2{
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-  }
-
   .tablet\:flex{
     display: flex;
   }
