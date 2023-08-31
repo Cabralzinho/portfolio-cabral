@@ -21,6 +21,15 @@ body {
     overflow-x: hidden;
 }
 
+html {
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+}
+
+.container {
+    @apply max-w-[1300px]
+}
+
 .open-hamburguer {
     @apply tablet:h-auto tablet:w-full tablet:justify-center tablet:items-center tablet:bg-slate-900 tablet:bg-opacity-100 tablet:rounded tablet:py-3 tablet:gap-5 tablet:divide-y-2 tablet:divide-gray-800
 }

@@ -24,16 +24,16 @@
     </div>
     <div id="hamburguer"
       class="tablet:flex tablet:flex-col tablet:gap-2 hidden cursor-pointer hamburguer items-center justify-center">
-      <div class="h-[2px] w-[32px] bg-red-900"></div>
-      <div class="h-[2px] w-[32px] bg-red-900"></div>
-      <div class="h-[2px] w-[32px] bg-red-900"></div>
+      <div class="h-[2px] w-[32px] bg-blue-950"></div>
+      <div class="h-[2px] w-[32px] bg-blue-950"></div>
+      <div class="h-[2px] w-[32px] bg-blue-950"></div>
     </div>
     <ul id="navbar" class="flex gap-12 tablet:hidden tablet:gap-2 text-lg tablet:text-xl text-gray-400 font-bold">
       <li style="animation-delay: .3s;" class="animation-appear opacity-0">
         <a class="hover:text-gray-200 transition-colors" href="#start">Ínicio</a>
       </li>
       <li style="animation-delay: .6s;" class="animation-appear opacity-0">
-        <a class="hover:text-gray-200 transition-colors" href="#who-i-am">Quem sou</a>
+        <a class="hover:text-gray-200 transition-colors" href="#about-me">Sobre mim</a>
       </li>
       <li style="animation-delay: .9s;" class="animation-appear opacity-0">
         <a class="hover:text-gray-200 transition-colors" href="#projects">Projetos</a>
@@ -48,7 +48,7 @@
   </header>
   <main>
     <section id="start" class="flex justify-center items-center p-20 cell:p-2">
-      <div class="flex items-center tablet:text-center w-full min-h-[400px]">
+      <div class="flex items-center tablet:text-center w-full min-h-[400px] container">
         <div class="w-[50%] cell:w-full tablet:w-screen tablet:items-center flex flex-col gap-8">
           <h1 class="text-4xl cell:text-2xl font-bold">
             Ajudando empresas a construírem <span class="text-blue-600">Websites</span> de forma moderna e
@@ -70,16 +70,16 @@
         </div>
       </div>
     </section>
-    <section id="who-i-am" class="flex justify-center items-center p-20 cell:p-10">
+    <section id="about-me" class="flex justify-center items-center p-20 cell:p-10">
       <div
-        class="flex tablet:flex-col justify-between items-center border-2 rounded-xl border-indigo-950 bg-gray-900 p-6 tablet:p-5 h-auto gap-6 tablet:gap-3">
+        class="flex tablet:flex-col justify-between items-center border-2 rounded-xl border-indigo-950 bg-gray-900 p-6 tablet:p-5 h-auto gap-6 tablet:gap-3 container">
         <div class="w-full tablet:w-[40%]">
           <img class="animation-float" src="./assets/image/Code typing-bro.svg" alt="">
         </div>
         <div class="flex flex-col gap-3 tablet:justify-center items-center">
           <h4 class="text-indigo-400 text-xl font-bold">Quem sou</h4>
           <h2 class="text-4xl cell:text-2xl text-blue-600 font-bold">Thiago Cabral</h2>
-          <h2 class="text-xl text-gray-300">Front-End Developer</h2>
+          <h2 class="text-sm uppercase text-gray-300">Front-End Developer</h2>
           <p class="py-10 tablet:py-6 text-gray-400 cell:text-center">
             Sou focado em desenvolvimento front-end de aplicações web. Construo
             interfaces modernas e de alta qualidade, focando principalmente em performance, acessibilidade e
@@ -127,9 +127,9 @@
     <section id="projects"
       class="flex flex-col justify-center items-center p-20 cell:p-10 bg-gray-900 bg-opacity-50 gap-32 cell:gap-20">
       <h2 class="text-5xl cell:text-3xl">Projetos.</h2>
-      <div class="flex tablet:flex-col gap-10" data-aos="fade-left">
+      <div class="flex tablet:flex-col gap-10 container" data-aos="fade-left">
         <article
-          class="flex flex-col items-start justify-start bg-slate-950 animation-appear opacity-0 border-2 border-blue-900 p-6 max-w-[24rem] gap-3">
+          class="flex flex-col items-start justify-start bg-slate-950 animation-appear opacity-0 border-2 border-blue-900 p-6 w-full gap-3">
           <h2 class="text-2xl font-bold">Pokedex</h2>
           <p class="text-gray-400">
             Um projeto inspirado em uma Pokedex usando HTML, CSS, JavaScript manipulando API.
@@ -138,7 +138,7 @@
             target="_blank">Confira o projeto aqui</a>
         </article>
         <article
-          class="flex flex-col items-start justify-start bg-slate-950 animation-appear opacity-0 border-2 border-red-900 p-6 max-w-[24rem] gap-3">
+          class="flex flex-col items-start justify-start bg-slate-950 animation-appear opacity-0 border-2 border-red-900 p-6 w-full gap-3">
           <h2 class="text-2xl font-bold">Clone Spotify</h2>
           <p class="text-gray-400">
             Um clone do spotify usando HTML, CSS, Bootstrap e responsividade para aprimorar a prática.
@@ -147,7 +147,7 @@
             target="_blank">Confira o projeto aqui</a>
         </article>
         <article
-          class="flex flex-col items-start justify-start bg-slate-950 animation-appear opacity-0 border-2 border-purple-900 p-6 max-w-[24rem] gap-3">
+          class="flex flex-col items-start justify-start bg-slate-950 animation-appear opacity-0 border-2 border-purple-900 p-6 w-full gap-3">
           <h2 class="text-2xl font-bold">Accordion</h2>
           <p class="text-gray-400">
             Um projeto feito para aprimorar a lógica de programção feito com HTML, Tailwind, JavaScript.
@@ -159,7 +159,7 @@
     </section>
     <section id="services" class="flex flex-col justify-center items-center p-20 cell:p-10 gap-32 cell:gap-20">
       <h2 class="text-5xl cell:text-3xl">Serviços.</h2>
-      <div class="flex gap-10" data-aos="zoom-in">
+      <div class="flex gap-10 justify-center container" data-aos="zoom-in">
         <article
           class="bg-gray-900 border-2 border-gray-800 rounded p-6 max-w-[24rem] max-h-[24rem] flex flex-col justify-center items-center text-center gap-4 animation-appear opacity-0">
           <svg class="text-6xl text-purple-300" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512">
@@ -174,7 +174,7 @@
     <section id="knowledge"
       class="flex flex-col justify-center items-center p-20 cell:p-10 bg-gray-900 bg-opacity-50 gap-32 cell:gap-20">
       <h2 class="text-3xl">Conhecimentos.</h2>
-      <div class="flex tablet:flex-wrap tablet:justify-center tablet:items-center gap-5" data-aos="fade-right">
+      <div class="flex tablet:flex-wrap tablet:justify-center tablet:items-center gap-5 container" data-aos="fade-right">
         <article
           class="flex flex-col justify-center items-center text-center rounded-sm border-2 border-indigo-950 bg-gray-900 p-6 max-w-[18rem] max-h-[18rem] gap-2 w-80 opacity-0 animation-appear">
           <svg class="text-5xl text-blue-300" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
