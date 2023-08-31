@@ -841,6 +841,10 @@ video {
   padding: 1.5rem;
 }
 
+.p-10{
+  padding: 2.5rem;
+}
+
 .py-10{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -1119,6 +1123,10 @@ html {
 
   .cell\:p-2{
     padding: 0.5rem;
+  }
+
+  .cell\:p-5{
+    padding: 1.25rem;
   }
 
   .cell\:text-center{
