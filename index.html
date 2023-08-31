@@ -9,10 +9,9 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>Portfólio | Cabral</title>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
 </head>
 
-<body class="bg-slate-950 text-white scroll-smooth">
+<body class="bg-slate-950 text-white scroll-smooth w-screen">
   <header id="header"
     class=" bg-slate-950 flex justify-around tablet:justify-between tablet:gap-4 tablet:mx-2 items-center h-[100px] sticky top-0 z-[999] border-b-2 border-gray-800 border-opacity-50">
     <div class="flex gap-1 items-center">
@@ -48,10 +47,10 @@
     </ul>
   </header>
   <main>
-    <section id="start" class="flex justify-center p-20">
+    <section id="start" class="flex justify-center items-center p-20 cell:p-2">
       <div class="flex items-center tablet:text-center w-full min-h-[400px]">
-        <div class="w-[50%] tablet:w-screen tablet:items-center flex flex-col gap-8">
-          <h1 class="text-4xl font-bold">
+        <div class="w-[50%] cell:w-full tablet:w-screen tablet:items-center flex flex-col gap-8">
+          <h1 class="text-4xl cell:text-2xl font-bold">
             Ajudando empresas a construírem <span class="text-blue-600">Websites</span> de forma moderna e
             responsiva.
           </h1>
@@ -71,17 +70,17 @@
         </div>
       </div>
     </section>
-    <section id="who-i-am" class="flex justify-center p-20">
+    <section id="who-i-am" class="flex justify-center items-center p-20 cell:p-10">
       <div
-        class="flex tablet:flex-col justify-between items-center border-2 rounded-xl border-indigo-950 bg-gray-900 p-6 tablet:p-3 h-auto gap-6 tablet:gap-3">
-        <div class="w-full tablet:w-[30%]">
+        class="flex tablet:flex-col justify-between items-center border-2 rounded-xl border-indigo-950 bg-gray-900 p-6 tablet:p-5 h-auto gap-6 tablet:gap-3">
+        <div class="w-full tablet:w-[40%]">
           <img class="animation-float" src="./assets/image/Code typing-bro.svg" alt="">
         </div>
         <div class="flex flex-col gap-3 tablet:justify-center items-center">
-          <h4 class="text-indigo-400 text-2xl font-bold">Quem sou</h4>
-          <h2 class="text-4xl text-blue-600 font-bold">Thiago Cabral</h2>
+          <h4 class="text-indigo-400 text-xl font-bold">Quem sou</h4>
+          <h2 class="text-4xl cell:text-2xl text-blue-600 font-bold">Thiago Cabral</h2>
           <h2 class="text-xl text-gray-300">Front-End Developer</h2>
-          <p class="py-10 tablet:py-6 text-gray-400">
+          <p class="py-10 tablet:py-6 text-gray-400 cell:text-center">
             Sou focado em desenvolvimento front-end de aplicações web. Construo
             interfaces modernas e de alta qualidade, focando principalmente em performance, acessibilidade e
             responsividade.
@@ -125,8 +124,9 @@
         </div>
       </div>
     </section>
-    <section id="projects" class="flex flex-col justify-center items-center p-20 bg-gray-900 bg-opacity-50 gap-32">
-      <h2 class="text-5xl">Projetos.</h2>
+    <section id="projects"
+      class="flex flex-col justify-center items-center p-20 cell:p-10 bg-gray-900 bg-opacity-50 gap-32 cell:gap-20">
+      <h2 class="text-5xl cell:text-3xl">Projetos.</h2>
       <div class="flex tablet:flex-col gap-10" data-aos="fade-left">
         <article
           class="flex flex-col items-start justify-start bg-slate-950 animation-appear opacity-0 border-2 border-blue-900 p-6 max-w-[24rem] gap-3">
@@ -157,8 +157,8 @@
         </article>
       </div>
     </section>
-    <section id="services" class="flex flex-col justify-center items-center p-20 gap-32">
-      <h2 class="text-5xl">Serviços.</h2>
+    <section id="services" class="flex flex-col justify-center items-center p-20 cell:p-10 gap-32 cell:gap-20">
+      <h2 class="text-5xl cell:text-3xl">Serviços.</h2>
       <div class="flex gap-10" data-aos="zoom-in">
         <article
           class="bg-gray-900 border-2 border-gray-800 rounded p-6 max-w-[24rem] max-h-[24rem] flex flex-col justify-center items-center text-center gap-4 animation-appear opacity-0">
@@ -171,8 +171,9 @@
         </article>
       </div>
     </section>
-    <section id="knowledge" class="flex flex-col justify-center items-center p-20 bg-gray-900 bg-opacity-50 gap-32">
-      <h2 class="text-5xl">Conhecimentos.</h2>
+    <section id="knowledge"
+      class="flex flex-col justify-center items-center p-20 cell:p-10 bg-gray-900 bg-opacity-50 gap-32 cell:gap-20">
+      <h2 class="text-3xl">Conhecimentos.</h2>
       <div class="flex tablet:flex-wrap tablet:justify-center tablet:items-center gap-5" data-aos="fade-right">
         <article
           class="flex flex-col justify-center items-center text-center rounded-sm border-2 border-indigo-950 bg-gray-900 p-6 max-w-[18rem] max-h-[18rem] gap-2 w-80 opacity-0 animation-appear">
@@ -217,9 +218,7 @@
     </section>
   </main>
   <script src="https://kit.fontawesome.com/cef3251068.js" crossorigin="anonymous"></script>
-  <script>
-    AOS.init();
-  </script>
+  <script>AOS.init();</script>
   <script src="./assets/js/main.js"></script>
 </body>
 
