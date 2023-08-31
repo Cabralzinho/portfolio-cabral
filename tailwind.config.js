@@ -4,7 +4,10 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        mobile: {
+        cell: {
+          max: "460px"
+        },
+        tablet: {
           max: "850px"
         }
       }
