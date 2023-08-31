@@ -978,7 +978,7 @@ video {
 
 body {
   font-family: 'Kumbh Sans', sans-serif;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 html {
@@ -1095,10 +1095,6 @@ html {
 }
 
 @media (max-width: 460px){
-  .cell\:m-5{
-    margin: 1.25rem;
-  }
-
   .cell\:w-full{
     width: 100%;
   }
@@ -1109,10 +1105,6 @@ html {
 
   .cell\:p-5{
     padding: 1.25rem;
-  }
-
-  .cell\:p-0{
-    padding: 0px;
   }
 
   .cell\:text-center{
