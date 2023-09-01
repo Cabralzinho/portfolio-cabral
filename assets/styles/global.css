@@ -43,7 +43,7 @@ html {
 }
 
 .animation-float {
-    animation: float 10s infinite linear;
+    animation: float 8s infinite;
 }
 
 .animation-navbar {
