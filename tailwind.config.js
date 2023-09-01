@@ -10,7 +10,7 @@ module.exports = {
         tablet: {
           max: "850px"
         }
-      }
+      },
     },
   },
   future: {
