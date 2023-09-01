@@ -11,14 +11,14 @@ function checkVisibility() {
         const navBarItemUrl = new URL(navBarItem.href);
 
         if (navBarItemUrl.hash === `#${section.id}`) {
-          navBarItem.classList.add("text-indigo-600");
+          navBarItem.classList.add("text-gradient-primary");
           history.replaceState(
             {},
             "",
             `${navBarItemUrl.pathname}${navBarItemUrl.hash}`
           );
         } else {
-          navBarItem.classList.remove("text-indigo-600");
+          navBarItem.classList.remove("text-gradient-primary");
         }
       });
     }

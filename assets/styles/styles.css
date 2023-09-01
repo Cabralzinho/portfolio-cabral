@@ -823,25 +823,6 @@ video {
   --tw-bg-opacity: 0.5;
 }
 
-.bg-gradient-to-r{
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
-.from-cyan-500{
-  --tw-gradient-from: #06b6d4 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(6 182 212 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.to-blue-500{
-  --tw-gradient-to: #3b82f6 var(--tw-gradient-to-position);
-}
-
-.bg-clip-text{
-  -webkit-background-clip: text;
-          background-clip: text;
-}
-
 .p-20{
   padding: 5rem;
 }
@@ -1082,6 +1063,17 @@ html {
 
 .animation-navbar {
   animation: navbar-entry 1s forwards;
+}
+
+.text-gradient-primary{
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+  --tw-gradient-from: #4338ca var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(67 56 202 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #6366f1 var(--tw-gradient-to-position);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
 }
 
 @keyframes navbar-entry {
